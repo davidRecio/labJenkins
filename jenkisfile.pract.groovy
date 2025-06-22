@@ -1,7 +1,7 @@
 pipeline {
-    agent {
-        label 'docker'
-    }
+
+    agent any
+    
     environment {
         JOB_NAME_ENV = "${env.JOB_NAME}"
         BUILD_NUMBER_ENV = "${env.BUILD_NUMBER}"
